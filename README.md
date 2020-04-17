@@ -17,4 +17,8 @@ pipelines:
 ```
  Fíjate que este pipeline sólo afecta a la rama "develop". Atención: es importante que el mensaje del commit incluya "[skip ci]". 
 * Ahora debes añadir en el packaje.json de la aplicación el siguiente script: `"version": "npm --no-git-tag-version version patch"`.
+* Accede a la configuración del repositorio en BitBucket y activa los pipelines.  
+
+![Activar los pipelines](./assets/setting.png)  
+
 * Pushealo al remoto y ya debería funcionar.
